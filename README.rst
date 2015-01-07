@@ -32,14 +32,14 @@ The library works with both Python 2.x and 3.x.
 Usage
 -----
 
-Create an enum names ``name``, with a given list of names for each member,
+Create an enum named ``name``, with a given list of names for each member,
 e.g.: ::
 
     Foo = k.make("Foo", ["A", "B", "C"])
 
 Note that this can be reduced as ``Foo = k.make("Foo", "ABC")``.
 
-You can then use each value:
+You can then use each value: ::
 
     >>> Foo.A
     0
@@ -48,7 +48,7 @@ You can then use each value:
     >>> Foo.C
     2
 
-Types are matched, too. An enum member is of its enum type:
+Types are matched, too. An enum member is of its enum type: ::
 
     >>> isinstance(Foo.A, Foo)
     True
@@ -66,7 +66,7 @@ Types are matched, too. An enum member is of its enum type:
     False
 
 An enum name is useful for debugging purposes, but you can use the same
-name for different enums if you like:
+name for different enums if you like: ::
 
     >>> A = k.make("A", "X")
     >>> B = k.make("A", "X")
@@ -81,7 +81,7 @@ name for different enums if you like:
     >>> type(A.X) == type(B.X)
     False
 
-But enum members are ``int``s too:
+But enum members are ``int``s too: ::
 
     >>> A = k.make("A", "abcd")
     >>> isinstance(A.a, int)
