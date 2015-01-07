@@ -2,8 +2,10 @@
 
 __version__ = '0.0.1'
 
+
 class KEnum(int):
     pass
+
 
 def make(name, names, start=0):
     """
