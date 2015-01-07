@@ -11,4 +11,6 @@ import k
 
 class TestK(unittest.TestCase):
 
-    pass  # TODO
+    def test_type(self):
+        x = k.make("x", ["a"])
+        self.assertTrue(isinstance(x.a, x))
