@@ -12,5 +12,10 @@ import k
 class TestK(unittest.TestCase):
 
     def test_type(self):
-        x = k.make("x", ["a"])
-        self.assertTrue(isinstance(x.a, x))
+        x = k.make("x", "a")
+        self.assertIsInstance(x.a, x)
+
+
+    def test_type_name(self):
+        A = k.make("Foobar", "X")
+        self.assertEquals(str(type(A.X)), "<class 'k.Foobar'>")

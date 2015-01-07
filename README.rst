@@ -75,9 +75,9 @@ name for different enums if you like: ::
     >>> isinstance(A.X, B)
     False
     >>> type(A.X)
-    <class 'k.aA'>
+    <class 'k.A'>
     >>> type(B.X)
-    <class 'k.aA'>
+    <class 'k.A'>
     >>> type(A.X) == type(B.X)
     False
 
