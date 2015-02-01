@@ -9,7 +9,7 @@ class KEnum(int):
 
 def make(name, names, start=0):
     """
-    Create an enum names ``name``, with a given list of names for each member.
+    Create an enum named ``name``, with a given list of names for each member.
     """
     klass = type(name, (KEnum,), {})
 
