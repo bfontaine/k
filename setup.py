@@ -1,11 +1,11 @@
 # -*- coding: UTF-8 -*-
 
-import setuptools
 from distutils.core import setup
 
 # http://stackoverflow.com/a/7071358/735926
 import re
-VERSIONFILE='k/__init__.py'
+
+VERSIONFILE = 'k/__init__.py'
 verstrline = open(VERSIONFILE, 'rt').read()
 VSRE = r'^__version__\s+=\s+[\'"]([^\'"]+)[\'"]'
 mo = re.search(VSRE, verstrline, re.M)
@@ -21,16 +21,21 @@ setup(
     author_email='b@ptistefontaine.fr',
     packages=['k'],
     url='https://github.com/bfontaine/k',
-    license=open('LICENSE', 'r').read(),
+    license="MIT",
     description='enums for Python',
-    long_description="""\
-k is an enum-like implementation for Python""",
+    long_description=open('README.md', 'r', encoding='utf-8').read(),
+    long_description_content_type='text/markdown',
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
     ],
