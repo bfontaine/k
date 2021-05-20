@@ -37,8 +37,6 @@ e.g.: ::
 
     Foo = k.make("Foo", ["A", "B", "C"])
 
-Note that this can be reduced as ``Foo = k.make("Foo", "ABC")``.
-
 You can then use each value: ::
 
     >>> Foo.A
